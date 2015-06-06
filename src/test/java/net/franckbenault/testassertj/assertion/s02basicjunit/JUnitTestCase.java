@@ -1,4 +1,4 @@
-package net.franckbenault.testassertj.assertion.s01basicjunit;
+package net.franckbenault.testassertj.assertion.s02basicjunit;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
