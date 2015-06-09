@@ -1,12 +1,23 @@
 package net.franckbenault.testassertj.assertion.s02basicjunit;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.fail;
 
 import org.junit.Test;
 
 public class JUnitTestCase {
-	
 
+	
+	@Test(expected=ArithmeticException.class)
+	public void t00fail() {
+		int i1= 0;
+		int i2= 0;
+		
+		int res = i1/i2;
+		
+		fail("exception expected");
+	}
+	
 	@Test
 	public void t01AssertArrayEqualsTest() {
 		int[] ints1 = {1,3};
