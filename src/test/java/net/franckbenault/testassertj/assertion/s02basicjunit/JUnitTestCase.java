@@ -13,6 +13,7 @@ public class JUnitTestCase {
 		int i1= 0;
 		int i2= 0;
 		
+		@SuppressWarnings("unused")
 		int res = i1/i2;
 		
 		fail("exception expected");
