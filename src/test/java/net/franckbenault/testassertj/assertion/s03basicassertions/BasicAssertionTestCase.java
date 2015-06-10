@@ -1,6 +1,7 @@
 package net.franckbenault.testassertj.assertion.s03basicassertions;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.within;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,4 +28,11 @@ public class BasicAssertionTestCase {
 	}
 	
 
+	@Test
+	public void t03isCloseTo() {
+		float myvalue = 3.1415f;
+		
+		assertThat(myvalue).isCloseTo(3.17f, within(0.1f));
+	}
+	
 }
