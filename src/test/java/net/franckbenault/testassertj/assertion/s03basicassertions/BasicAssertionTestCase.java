@@ -34,5 +34,19 @@ public class BasicAssertionTestCase {
 		
 		assertThat(myvalue).isCloseTo(3.17f, within(0.1f));
 	}
+
+	@Test
+	public void t04aIsEqualTo() {
+		 int myvalue = 10;
+		
+		assertThat(myvalue).isEqualTo(10);
+	}
 	
+	@Test
+	public void t04bIsEqualTo() {
+		int[] ints1 = {1,3};
+		int[] ints2 = {1,3};
+		
+		assertThat(ints1).isEqualTo(ints2);
+	}
 }
